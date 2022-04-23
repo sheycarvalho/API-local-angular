@@ -1,0 +1,31 @@
+header{
+     background-color: #000000;
+     height: 80px;
+}
+.logo{
+    height: 76px;
+}
+.menu{
+    width: 690px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    text-transform:  uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+.search{
+    width: 100px;
+    height: 30px;
+}
+.barras{
+    width: 50px;
+    display: none;
+}
+.posicionamento-header{
+    position: relative;
+}

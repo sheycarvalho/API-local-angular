@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2? family= Roboto & display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+.container-grid{
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+     background-color: #000000;
+     height: 80px;
+}
+.logo{
+    height: 76px;
+}
+.menu{
+    width: 690px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    text-transform:  uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+.search{
+    width: 100px;
+    height: 30px;
+}
+.banner{
+    background-image:url(../home/home.component.ts);
+    height: 600px;
+    background-repeat: none;
+    background-size: cover;
+}
+.secao-jogos{
+    background-color: rgb(6, 66, 100);
+    color:white;
+    text-decoration: none;
+    text-transform:  uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    text-align: right;
+}
+.jogos{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.jogos img{
+        width: 150px;
+        display: flex;
+}
+.secao-ofertas{
+    background-color: black;
+    height: 40px;
+}
+.texto-ofertas{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    text-transform:  uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+.container-imagem{
+    background-color: grey;
+    display: grid;
+    align-content: start;
+}
+.imagem{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 110px;
+    padding: 30px;
+}
+.imagem h2{
+    color:white;
+}
+.review-imagem{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: space-evenly;
+    align-content: space-between;
+    width: 400px;
+}
+.review-texto h1{
+    font-size: 25px;
+}
+.barras{
+    width: 50px;
+    display: none;
+}
+.posicionamento-header{
+    position: relative;
+}
+.secao-compradores{
+    background-color: #C4C4C4;
+    text-decoration: none;
+    text-transform: initial;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+.barra-info{
+    background-color: #690D0D;
+    height: 117px;
+}
+.informaçoes{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    box-sizing: border-box;
+}
+.info-join{
+    width: 200px;
+}
+.info-voucher{
+    width: 200px;
+}
+.info-more{
+    width: 200px;
+}
+.info-join, .info-voucher, .info-more{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+.informaçoes h2{
+    text-transform: none;
+    font-size: 25px;
+}
+.informacoes img{
+    width: 80px;
+}
+.rodape{
+    background-color: #3A4151;
+    height: 166x;
+}
+.links-footer{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    box-sizing: border-box;
+}
+.links{
+    text-transform: none;
+    font-size: 24px;
+    color: white;
+}
+.links h2{
+    font-size: 24px;
+}
+
+@media screen and (max-width: 1200px) {
+    .container-grid{
+        width: 90%;
+    }
+    .menu{
+        width: 460px;
+    }
+    .menu a{
+        font-size: 16px;
+    }
+    .logo{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .barras{
+        display: inline-block;
+    }  
+    .menu{
+        display: none;
+        flex-direction: column;
+        width: 200px;
+        position: absolute;
+        top: 0;
+        right: 65px;
+        background-color: black;
+    }
+    .menu a{
+        text-align: center;
+        padding: 15px;
+    }
+    .menu-ativo{
+    display: flex;
+}
+}
