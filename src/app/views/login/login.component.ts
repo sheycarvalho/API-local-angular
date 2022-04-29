@@ -17,12 +17,18 @@ export class LoginComponent implements OnInit {
   }
 
   loginModel = new Users();
+  mensagem = ""
 
   onSubmit() {
     console.log(this.loginModel)
     
-    this.loginService.login(this.loginModel). subscribe((response)=>{
+    this.loginService.login(this.loginModel).subscribe((response)=>{
       console.log(response)
+      this.router.navigateByUrl('')
+    }, (respostaErro) =>{
+      this.mensagem = respostaErro.error
+      console.log(respostaErro)
+
     })
   }
 }
