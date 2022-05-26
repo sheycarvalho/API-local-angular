@@ -1,14 +1,15 @@
 <body>
     <div id="login-container">
         <h1>Game Mania</h1>
-        <form action="">
+        <form #loginForm="ngForm" (ngSubmit)="onSubmit()">
             <label for="email">E-mail</label>
-            <input type="email" name="email" id="email" placeholder="Digite seu email" autocomplete="off">
+            <input type="email" name="email" id="email" placeholder="Digite seu email" [(ngModel)]="loginModel.email">
             <label for="password">Senha</label>
-            <input type="password" name="password" id="password" placeholder="Digite sua senha"> 
+            <input type="password" name="password" id="password" placeholder="Digite sua senha" [(ngModel)]="loginModel.password"> 
             <a href="#" id="forgot-pass">Esqueceu a senha?</a>
-            <input type="submit" value="Login">
+            <input id="botao-enviar" type="submit" value="Login">
         </form>
+        <p id="mensagem" *ngIf=" mensagem != '' "> {{ mensagem }} </p>
         <div id="social-container">
             <p>Entre pelas suas redes sociais</p>
             <a href=""><img src="asets/img/fb.png"></a>
