@@ -1,4 +1,4 @@
-<h1 align="center">Develop a local (private) API project in angular for a website login screen/h1>
+<h1 align="center">Develop a local (private) API project in angular for a website login screen</h1>
 
 <p align="center">Project made using angular by <b>Sheyenne de Morais Carvalho</b>
 
